@@ -1,0 +1,55 @@
+// .table {
+//   border: 1px solid #000;
+// }
+
+// table, td, th  {
+//   /* задаем границу для всех элементов */
+//   border: 3px solid #245488;
+
+section {
+  padding-top: 30px;
+}
+
+table, td, th {
+  border-collapse: collapse;
+  border: 3px solid #245488;
+}
+
+td, th {
+  /* делаем отступ в ячейках, выставляем выравнивание текста */
+  padding: 10px 20px;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto 20px;
+  width: 90%;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.first, .second {
+  font-size: 20px;
+}
+.one, .two, .three {
+  width: 26.5%;
+}
+
+.one {
+  background-color: #e9b4df;
+}
+
+.two {
+  background-color: #ff009029;
+}
+
+.three {
+  background-color:rgb(107 0 255 / 16%);;
+}
+
+.four {
+  width: 20%;
+  background-color: #f7ed0070;
+}
