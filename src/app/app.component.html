@@ -1,60 +1,68 @@
 <section>
-  <table class="table">
-    <!-- title -->
-    <tr>
-      <th class="title one">{{title[0]}}</th>
-      <th class="title two">{{title[1]}}</th>
-      <th class="title three">{{title[2]}}</th>
-      <th class="title four" colspan="2">{{title[3]}}</th>
+  <h1>BE / DO / GO</h1>
+  <table>
+    <!-- Header row -->
+    <tr class="header">
+      <th class="column1">{{ verbBe[0].first }}</th>
+      <th class="column2">{{ verbBe[0].second }}</th>
+      <th class="column3">{{ verbBe[0].third }}</th>
+      <th class="translation">{{ verbBe[0].translation }}</th>
     </tr>
 
+    <!-- Data rows -->
     <!-- be -->
-    <tr>
-      <td class="first one">{{be[0]}}</td>
-      <td class="first two">{{be[1]}}</td>
-      <td class="first three">{{be[2]}}</td>
-      <td class="first four" rowspan="2">{{be[3]}}</td>
+    <tr class="verbsName">
+      <td class="column1">{{ verbBe[1].first }}</td>
+      <td class="column2">{{ verbBe[1].second }}</td>
+      <td class="column3">{{ verbBe[1].third }}</td>
+      <td class="translation" rowspan="2">{{ verbBe[1].translation }}</td>
     </tr>
-    <tr>
-      <td class="second one">Don't <b>be</b> late</td>
-      <td class="second two">I <b>was</b> tired after work</td>
-      <td class="second three">I've never <b>been</b> this happy</td>
+
+    <!-- example be  -->
+    <tr class="verbsExample">
+      <td class="column1" [innerHTML]="verbBe[2].first"></td>
+      <td class="column2" [innerHTML]="verbBe[2].second"></td>
+      <td class="column3" [innerHTML]="verbBe[2].third"></td>
     </tr>
   </table>
+</section>
 
-  <!-- do -->
-  <table class="table">
-    <tr>
-      <td class="first one">do</td>
-      <td class="first two">did</td>
-      <td class="first three">done</td>
-      <td class="first four" rowspan="2">делать, выполнять</td>
+<!-- DO -->
+<section>
+  <table>
+    <!-- do -->
+    <tr class="verbsName">
+      <td class="column1">{{ verbDo[0].first }}</td>
+      <td class="column2">{{ verbDo[0].second }}</td>
+      <td class="column3">{{ verbDo[0].third }}</td>
+      <td class="translation" rowspan="2">{{ verbDo[0].translation }}</td>
     </tr>
-    <tr>
-      <td class="second one">
-        What<b>do</b> you <b>do</b>?
-        <br />
-        I can't <b>do</b> this
-      </td>
-      <td class="second two">You <b>did</b> a great job</td>
-      <td class="second three">I've never <b>done</b> this before</td>
+
+    <!-- example do  -->
+    <tr class="verbsExample">
+      <td class="column1" [innerHTML]="verbDo[1].first"></td>
+      <td class="column2" [innerHTML]="verbDo[1].second"></td>
+      <td class="column3" [innerHTML]="verbDo[1].third"></td>
     </tr>
   </table>
+</section>
 
-  <!-- go -->
-  <table class="table">
-    <tr>
-      <td class="first one">go</td>
-      <td class="first two">went</td>
-      <td class="first three">gone</td>
-      <td class="first four" rowspan="2">идти</td>
+<!-- GO -->
+<section>
+  <table>
+    <!-- go -->
+    <tr class="verbsName">
+      <td class="column1">{{ verbGo[0].first }}</td>
+      <td class="column2">{{ verbGo[0].second }}</td>
+      <td class="column3">{{ verbGo[0].third }}</td>
+      <td class="translation" rowspan="2">{{ verbGo[0].translation }}</td>
     </tr>
-    <tr>
-      <td class="second one">I<b> go</b> to the store every other day?</td>
-      <td class="second two">I <b>went</b> to the store yesterday</td>
-      <td class="second three">
-        Tom's not here. He's <b>gone</b> to the store
-      </td>
+
+    <!-- example go  -->
+    <tr class="verbsExample">
+      <td class="column1" [innerHTML]="verbGo[1].first"></td>
+      <td class="column2" [innerHTML]="verbGo[1].second"></td>
+      <td class="column3" [innerHTML]="verbGo[1].third"></td>
     </tr>
   </table>
 </section>

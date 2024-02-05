@@ -1,55 +1,68 @@
-// .table {
-//   border: 1px solid #000;
-// }
-
-// table, td, th  {
-//   /* задаем границу для всех элементов */
-//   border: 3px solid #245488;
-
 section {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
-table, td, th {
+h1 {
+  text-align: center;
+}
+
+table,
+td,
+th {
   border-collapse: collapse;
   border: 3px solid #245488;
 }
 
-td, th {
+td,
+th {
   /* делаем отступ в ячейках, выставляем выравнивание текста */
   padding: 10px 20px;
   text-align: center;
 }
 
 table {
-  margin: 0 auto 20px;
+  margin: 0 auto;
   width: 90%;
 }
 
-.title {
+.header {
   font-size: 24px;
 }
 
-.first, .second {
-  font-size: 20px;
-}
-.one, .two, .three {
+.column1,
+.column2,
+.column3 {
   width: 26.5%;
 }
 
-.one {
-  background-color: #e9b4df;
+.column1 {
+  background-color: #e9b4dfa3;
 }
 
-.two {
+.column2 {
   background-color: #ff009029;
 }
 
-.three {
-  background-color:rgb(107 0 255 / 16%);;
+.column3 {
+  background-color: rgb(107 0 255 / 16%);
 }
 
-.four {
+.translation {
   width: 20%;
   background-color: #f7ed0070;
 }
+
+.verbsName {
+  font-size: 22px;
+}
+
+.verbsExample {
+  font-size: 22px;
+  color: #076bd7;
+
+  ::ng-deep b {
+    color: rgb(153, 49, 49);
+  }
+}
+
+
